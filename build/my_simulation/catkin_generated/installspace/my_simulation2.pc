@@ -1,0 +1,8 @@
+prefix=/home/rac/Mean_ws/install
+
+Name: my_simulation2
+Description: Description of my_simulation2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

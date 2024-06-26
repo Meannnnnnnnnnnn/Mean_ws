@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>Index</h1>
+    <ul>
+        {% for map in map %}
+        <li>{{ map[1] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/navigation">Go to Navigation</a>
+    <a href="/mapping">Go to Mapping</a>
+</body>
+</html>

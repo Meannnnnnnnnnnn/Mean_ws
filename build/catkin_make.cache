@@ -1,0 +1,2 @@
+async_web_server_cpp:beginner_tutorials:my_map_pkg:navigation_server:ros_opencv:turtlebot3_simulations/turtlebot3_fake:turtlebot3_simulations/turtlebot3_gazebo:turtlebot3_simulations/turtlebot3_simulations:turtlebot_position:video_streamer:video_to_web_server_real_one:web_video_server
+-DCATKIN_DEVEL_PREFIX=/home/rac/Mean_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rac/Mean_ws/install -G Unix Makefiles

@@ -1,0 +1,22 @@
+<launch>
+    <!-- Start map server -->
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find my_map_pkg)/maps/docmap.yaml"/>
+
+    <!-- Static transform between map and odom -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="map_to_odom_broadcaster" args="0 0 0 0 0 0 map odom"/>
+
+    <!-- Start AMCL -->
+    <node name="amcl" pkg="amcl" type="amcl">
+        <param name="use_map_topic" value="true" />
+        <rosparam command="load" file="$(find my_map_pkg)/config/amcl_config.yaml" />
+    </node>
+
+    <!-- Start move_base -->
+    <node name="move_base" pkg="move_base" type="move_base"/>
+
+    <!-- Start robot state publisher -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
+
+    <!-- Start RViz for visualization -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find my_map_pkg)/rviz/my_rviz_config.rviz" required="true"/>
+</launch>

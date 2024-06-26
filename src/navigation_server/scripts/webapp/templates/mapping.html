@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapping</title>
+</head>
+<body>
+    <h1>Mapping</h1>
+    <ul>
+        {% for map in map %}
+        <li>{{ map[1] }}</li>
+        {% endfor %}
+    </ul>
+    <button onclick="startMapping()">Start Mapping</button>
+    <button onclick="stopMapping()">Stop Mapping</button>
+    <button onclick="saveMap()">Save Map</button>
+    <script>
+        function startMapping() {
+            // Call the API to start mapping
+        }
+
+        function stopMapping() {
+            // Call the API to stop mapping
+        }
+
+        function saveMap() {
+            // Call the API to save map
+        }
+    </script>
+</body>
+</html>

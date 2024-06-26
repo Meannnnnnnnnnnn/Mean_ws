@@ -1,0 +1,8 @@
+prefix=/home/rac/Mean_ws/install
+
+Name: my_map_pkg
+Description: Description of my_map_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

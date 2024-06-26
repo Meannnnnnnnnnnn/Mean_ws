@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: video_to_web_server_real_one
+Description: Description of video_to_web_server_real_one
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

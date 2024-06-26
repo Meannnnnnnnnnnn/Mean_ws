@@ -1,0 +1,8 @@
+prefix=/home/rac/Mean_ws/install
+
+Name: video_streamer
+Description: Description of video_streamer
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

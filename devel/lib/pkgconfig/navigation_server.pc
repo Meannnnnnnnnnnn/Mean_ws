@@ -1,0 +1,8 @@
+prefix=/home/rac/Mean_ws/devel
+
+Name: navigation_server
+Description: Description of navigation_server
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

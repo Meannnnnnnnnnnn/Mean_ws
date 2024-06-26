@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation</title>
+</head>
+<body>
+    <h1>Navigation</h1>
+    <ul>
+        {% for map in map %}
+        <li>{{ map[1] }}</li>
+        {% endfor %}
+    </ul>
+    <button onclick="startNavigation()">Start Navigation</button>
+    <button onclick="stopNavigation()">Stop Navigation</button>
+    <button onclick="deleteMap()">Delete Map</button>
+    <script>
+        function startNavigation() {
+            fetch('/index/gotonavigation', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ mapname: 'example_map' }), // Replace with the actual map name
+            })
+            .then(response => response.text())
+            .then(data => {
+                console.log(data);
+                // Handle response
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+
+        function stopNavigation() {
+            // Call the API to stop navigation
+        }
+
+        function deleteMap() {
+            // Call the API to delete map
+        }
+    </script>
+</body>
+</html>

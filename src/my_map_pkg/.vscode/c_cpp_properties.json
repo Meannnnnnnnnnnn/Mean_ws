@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/rac/Mean_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/rac/Mean_ws/src/async_web_server_cpp/include/**",
+        "/home/rac/Mean_ws/src/beginner_tutorials/include/**",
+        "/home/rac/Mean_ws/src/my_map_pkg/include/**",
+        "/home/rac/Mean_ws/src/ros_opencv/include/**",
+        "/home/rac/Mean_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/rac/Mean_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/home/rac/Mean_ws/src/web_video_server/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

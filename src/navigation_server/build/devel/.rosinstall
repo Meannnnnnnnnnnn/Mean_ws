@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/rac/Mean_ws/src/navigation_server/build/devel/setup.sh
